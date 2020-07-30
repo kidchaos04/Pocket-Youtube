@@ -18,8 +18,7 @@ $(document).ready(function(){
 
 			data.items.forEach(item=>{
 				video=`
-				<iframe src="https://www.youtube.com/embed/${item.id.videoId}" width="100%" height="600" style="border:1px solid black;" allowfullscreen>
-</iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/${item.id.videoId}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				`
 
 				$("#videos").append(video);
